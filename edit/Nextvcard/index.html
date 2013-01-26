@@ -1,0 +1,327 @@
+<!--
+<?
+session_start(); 
+$idioma = $_POST['cambiar_idioma'];
+
+if (empty($idioma) || $idioma=="sp")
+	$_SESSION['lan']="sp";
+else
+	$_SESSION['lan']="en";
+?>
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Next VCard</title>
+
+	<meta charset="utf-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    
+    <!-- Botón +1. de GOOGLE-->
+    <script type="text/javascript">
+        window.___gcfg = {lang: 'es'};
+                    
+        (function() {
+         var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+         po.src = 'https://apis.google.com/js/plusone.js';
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+         })();
+    </script>
+    
+</head>
+<body>
+	<!-- Accesos Directos --> 
+	<div id="top_da" style="background:#FFFFFF; padding-top: 6px; padding-bottom: 6px; text-align: right">
+    	<div id="container">
+            <span class="daccess">
+                <!--
+                <a href="index.html" class="directaccess">
+                <?
+                if($_SESSION['lan']=='sp') echo "ENGLISH"; 
+				else echo "ESPAÑOL"
+				?></a> |
+                -->
+                <a href="#" target="_blank" class="directaccess">ENGLISH</a> |
+                <a href="curriculum/index.php" target="_blank" class="directaccess">CURRICULUM</a> |
+                <a href="http://www.reddelsur.es" target="_blank" class="directaccess">RED DEL SUR</a> |
+                <a href="mailto:nolose@nolose.es" class="directaccess">WEBMASTER</a>
+            </span>
+        </div>
+	</div>
+    
+    <div id="top_bar" style="background:#E3E3E3; padding-top: 4px;"></div>
+        
+	<div id="container">
+		<!-- Header -->            
+		<header class="clear-fix">
+			<div id="logo">
+				<span><a href="index.html" class="logotipo">NOLOSE</a><a href="index.html" class="sublogotipo">NETWORK</a>
+                    <!-- Inserta esta etiqueta donde quieras que aparezca Botón +1. -->
+                    <div class="g-plusone" data-size="medium" data-annotation="none"></div>
+            </span>
+                <div class="nosub_verde">I AM COMPUTER SYSTEMS <span class="sub_verde">ENGINEER</span></div>
+                
+			</div>
+
+			<!-- Social Media -->
+			<aside id="social-media">
+				<ul>
+					<li><a href="http://twitter.com/pedritobosch" target="_blank"><img alt="twitter" src="img/twitter.png"></a></li>
+					<li><a href="#"><img alt="facebook" src="img/facebook.png"></a></li>
+                    <li><a href="#"><img alt="dribble" src="img/in.png"></a></li>
+                    <li><a href="#"><img alt="google plus" src="img/google-plus.png"></a></li>
+                    <li><a href="#"><img alt="vimeo" src="img/vimeo.png"></a></li>
+                    
+					
+					
+					
+				</ul>
+			</aside>
+			<!-- End Social Media -->
+
+			<!-- Navigation -->
+			<nav class="clear-fix">
+				<ul>
+					<li><a class="tabs-page active" href="#home">HELLO!</a></li>
+					<li><a class="tabs-page" href="#about">ABOUT</a></li>
+					<li><a class="tabs-page" href="#portfolio">WORKS</a></li>
+					<li><a class="tabs-page" href="#contact">CONTACT</a></li>
+                    
+                    <!--
+                    <li><a class="tabs-page active" href="#home">
+                    <?
+                	if($_SESSION['lan']=='sp') echo "HOLA!"; 
+					else echo "HELLO!"
+					?></a></li>
+					<li><a class="tabs-page" href="#about">
+                    <?
+                	if($_SESSION['lan']=='sp') echo "SOBRE MI"; 
+					else echo "ABOUT"
+					?></a></li>
+					<li><a class="tabs-page" href="#portfolio">
+                    <?
+                	if($_SESSION['lan']=='sp') echo "TRABAJO"; 
+					else echo "WORK"
+					?></a></li>
+					<li><a class="tabs-page" href="#contact">
+                    <?
+                	if($_SESSION['lan']=='sp') echo "CONTACTO"; 
+					else echo "CONTACT"
+					?></a></li>
+                    -->
+                    
+				</ul>
+			</nav>
+			<!-- End Navigation -->
+            
+		</header>
+		<!-- End Header -->
+
+		<div id="loading-container">
+			<div id="loading"></div>
+		</div>
+
+		<!-- Content -->
+		<div id="content" class="clear-fix">
+
+			<!-- Homepage -->
+			<article id="home">
+				<div id="slider-container">
+					<div class="flexslider">
+						<div id="slider-bg"></div>
+						<ul class="slides">
+							<li>
+						   		<a href="#" data-type="image"><img alt="" src="upload/slider/slide1.png"/></a>
+						   		<!-- <div class="flex-caption">
+						            <p>Lorem Ipsum available, but the majority have suffered <br/>randomised words which don’t look even sligh believable.</p>
+						        </div> -->
+							</li>
+							<li>
+						   		<a href="#" data-type="image"><img  alt="" src="upload/slider/slide2.jpg"/></a>
+						   		<div class="flex-caption">
+						            <p>Lorem Ipsum available, but the majority have suffered randomised.</p>
+						        </div>
+							</li>
+							<li>
+						   		<a href="#" data-type="image"><img  alt="" src="upload/slider/slide3.jpg"/></a>
+						   		<div class="flex-caption">
+						            <p>Lorem Ipsum available, but the majority have suffered randomised words which don’t look even sligh believable look even sligh believable.</p>
+						        </div>
+							</li>
+							<li>
+						   		<a href="#" data-type="image"><img  alt="" src="upload/slider/slide4.jpg"/></a>
+						   		<div class="flex-caption">
+						            <p>Lorem Ipsum available, but words which <br/>don’t look even sligh believable.</p>
+						        </div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</article>
+			<!-- End Homepage -->
+
+			<!-- About -->
+			<article id="about" class="about">
+				<aside>
+					<div id="skills">
+						<h3><span>My EDUCATION</span></h3>
+						<ul>
+							<li data-value="100">BENG COMPUTER SYSTEMS ENGINEERING</li>
+                            <li data-value="20">MASTER  IN SOFT COMPUTING AND INTELLIGENT SYSTEMS</li>
+							<li data-value="100">ADVANCED EXPERT IN COMPUTER SYSTEMS MANAGEMENT</li>
+						</ul>
+					</div>
+				</aside>
+
+				<div class="about-content">
+					<h2>ABOUT ME</h2>
+					<p>Ingeniero Técnico Informático apasionado del trabajo en equipo, las comunicaciones y la tecnología. La mayor parte de mi vida profesional la he pasado en desarrollo software para empresas nacionales, principalmente. En este sector he disfrutado de mis éxitos y aprendido más de mis errores. Y descubrí que trabajando duro y con creatividad todo es posible. Me encanta superar retos constantemente.</p>
+
+					<blockquote>No existen límites, sólo los que nosotros mismos nos marcamos.</blockquote>
+
+					<h2>HOBBIES</h2>
+					<p>Mi mayor hobby es la automoción, me encanta conducir y disfrutar de cada instante en la carretera. Soy un amante de las actividades que requieren contacto con la naturaleza y de los deportes acuáticos, especialmente del Kite-Surf.</p>
+				</div>
+			</article>
+			<!-- End About -->
+
+			<!-- Work -->
+		  <article id="portfolio">
+				<div class="dropdown"></div>
+
+			<ul id="portfolio-filter">
+					<li><a href="" class="active" data-filter="*">All</a></li>
+                    <li><a href="" data-filter=".rds">Red del Sur</a></li>
+					<li><a href="" data-filter=".research">Research</a></li>
+           	  </ul>
+
+           	  <ul id="portfolio-list" class="clear-fix">
+           		  <li class="rds">
+           		  <!-- RDS -->
+                    <article id="about" class="about">
+                    <aside>
+                        <div id="works">
+                            <h3><span>Red del Sur</span></h3>
+                            <ul>
+                                <li>IMAGEN 1</li>
+                                <li>IMAGEN 2</li>
+                                <li>IMAGEN 3</li>
+                            </ul>
+                        </div>
+					</aside>
+    
+                        <div class="about-content">
+					<h2>INNOVACIÓN</h2>
+					<p>La innovación es la secuencia de actividades por las cuales un nuevo elemento es introducido en una unidad con la intención de beneficiar la unidad, una parte de ella o su conjunto. <strong>Romper con lo establecido</strong> es en muchas ocasiones una de las <strong>claves del éxito.</strong></p>
+					<h2>CREATIVIDAD</h2>
+					<p>Aplicar nuestra creatividad nos lleva a descubrirnos y a descubrir nuevos horizontes desde una visión ilimitada, que nos hace abrirnos a las infinitas posibilidades que tenemos delante de nosotros, aunque no las veamos.</p>
+                    <h2>TRABAJO EN EQUIPO</h2>
+					<p>El trabajo de un equipo comprometido es también parte fundamental del éxito. La suma de talento, conocimiento y compromiso hace que la productividad, que la consecución de objetivos, se consiga de manera natural.</p>
+                    <h2>EMPRENDIMIENTO</h2>
+					<p>Un emprendedor se refiere a una persona en condiciones de adaptarse a una realidad cambiante, que siempre busca nuevos retos, que siempre busca nuevos objetivos y trabaja continuamente en alcanzarlos.</p>
+				</div>
+                    </article>
+			<!-- End RDS -->
+           		  </li>
+           		  <li class="research">
+           		  <!-- RESEARCH -->
+                    <article id="about" class="about">
+                        <aside>
+                            <div id="works">
+                            	<h3><span>Research</span></h3>
+                                <ul>
+                                    <li>IMAGEN1</li>
+                                    <li>IMAGEN2</li>
+                                    <li>IMAGEN3</li>
+                                </ul>
+                            </div>
+                        </aside>
+    
+                        <div class="about-content">
+					<h2>DATA MINING</h2>
+					<p>Texto texto texto texto texto texto texto texto texto texto texto texto texto texto</p>
+                    <h2>NEURAL NETWORKS</h2>
+					<p>Texto texto texto texto texto texto texto texto texto texto texto texto texto texto</p>
+                    <h2>AUTOMATED PLANNING AND SCHEDULING</h2>
+					<p>Texto texto texto texto texto texto texto texto texto texto texto texto texto texto</p>
+                    <h2>PERVASIVE COMPUTING</h2>
+					<p>Texto texto texto texto texto texto texto texto texto texto texto texto texto texto</p>
+                    <h2>BIOINFORMATICS</h2>
+					<p>Texto texto texto texto texto texto texto texto texto texto texto texto texto texto</p>
+				</div>
+                    </article>
+			<!-- End RESEARCH -->
+           		  </li>
+           	  </ul>
+			</article>
+			<!-- End Portfolio -->
+
+			<!-- Contact -->
+			<article id="contact">
+				<div class="left">
+					<h2>CONTACT INFO</h2>
+					<ul>
+						<li class="mail"><a href="mailto:pedro@nolose.es">pedro@nolose.es</a></li>
+						<li class="phone">(+34) 668 845 338</li>
+						<li class="website"><a href="www.nolose.es">www.nolose.es</a></li>
+					</ul>
+                    
+                    <h2>ADDRESS</h2>
+					<p>
+                    Centro de Investigación Biomédica (D43)<br />
+					Parque Tecnológico de Ciencias de la Salud (PTS)<br />
+					Av. del Conocimiento s/n,<br />
+					18100, Armilla, Granada, ESPAÑA.<br />
+					</p>
+
+					<h2>SEND ME A MESSAGE</h2>
+
+					<form id="contact-form">
+						<input name="name" type="text" placeholder="Name" value="">
+						<input name="mail" type="text" placeholder="E-mail" value="">
+						<textarea name="comment" placeholder="Comment"></textarea>
+						<div id="msg" class="message"></div>
+						<input type="submit" id="submit" value="Send">
+					</form>
+				</div>
+
+				<div id="map-container">
+					<div id="map"></div>
+					<div class="top-shadow"></div>
+					<div class="left-shadow"></div>
+					<div class="right-shadow"></div>
+					<div class="bottom-shadow"></div>
+				</div>
+			</article>
+			<!-- End Contact -->
+		</div>
+		<!-- End Content -->
+
+		<!-- Footer -->
+		<footer class="clear-fix">
+			<p>&copy; 2012 - Next Vcard - Powered by Next Wordpress Themes</p>
+		</footer>
+		<!-- End Footer -->
+	</div>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.flexslider.min.js"></script>
+	<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+	<script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="js/gmap3.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
