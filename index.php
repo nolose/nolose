@@ -1,6 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es" >
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
 <meta name="viewport" content="width=device-width" />
 <title>BigBang - Html Template by Brankic1979</title>
@@ -24,6 +25,13 @@
 <!-- Photostream Javascript --> 
 <script type="text/javascript" src="javascript/bra.photostream.js"></script>
 
+<!-- Google Map Javascript --> 
+<script type="text/javascript" src="javascript/google_map_plugin.js"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+<!-- Contact form Javascript --> 
+<script type="text/javascript" src="javascript/contact-form-validate.js"></script>	
+
 </head>
 
 <body id="top">
@@ -46,13 +54,13 @@
 				<!-- Me gusta Google -->
 				<ul class="menu">
                 	<li><div class="g-plusone"></div></li>
-					<li><a href="team.html" class="current">Sobre Mí</a>		
+					<li><a href="index.php?section=1" class="current">Sobre MÃ­</a>		
 					</li>
-					<li><a href="work.html">Trabajo</a>		
+					<li><a href="index.php?section=2">Trabajo</a>		
 					</li>
-                    <li><a target="_blank" href="curriculum/index.php">Currículum</a>		
+                                        <li><a target="_blank" href="curriculum/index.php">CurrÃ­culum</a>		
 					</li>
-					<li><a href="contact.html">Contacto</a>		
+					<li><a href="index.php?section=3">Contacto</a>		
 					</li>
 				</ul><!--END UL-->
 				
@@ -63,69 +71,20 @@
 	</div><!--END HEADER-WRAPPER-->		
 	
 	<!-- END HEADER -->
+        
+        <?php	
+            switch ($_GET['section']) {
+                //MAIN						
+		case 1: include("main.php"); break;
+                //WORK						
+		case 2: include("work.php"); break;
+                //CONTACT						
+		case 3: include("contact.php"); break;
+                
+                default: include("main.php"); break; 
+            }
+	?>
 
-	<div class="section-title">		
-	
-		<h1 class="title">SOBRE MÍ <span>¿desea conoceme?</span></h1>
-			
-	</div><!--END SECTION TITLE-->
-	
-		
-	<div class="one-third">
-		<h3 class="title">Sobre M&iacute;</h3>
-		<p><strong>Me llamo pedro y soy Ingeniero Técnico Informático, apasionado del trabajo en equipo, la comunicación y las nuevas tecnologías.</strong></p>
-		<p>La mayor parte de mi vida profesional la he pasado en desarrollo software para empresas nacionales, principalmente. En este sector he disfrutado de mis éxitos y aprendido más de mis errores. Descubrí que trabajando duro y con creatividad todo es posible. Me encanta superar retos constantemente. <br /><i>"No existe límite alguno, únicamente los que nosotros mismos nos marcamos"</i>.</p>		
-	</div><!--END ONE-THIRD--> 	
-		
-	<div class="one-third">
-		<h3 class="title">Objetivos profesionales</h3>
-		<p><strong>Quisiera trabajar en una empresa donde pueda dar rienda suelta a mi imaginación y aplicar con total libertad  mis conocimientos.</strong></p>
-		<p>Estoy muy interesado en proyectos de I+D+i que no sólo reporten beneficios económicos, sino el valor añadido de una mejora en nuestra sociedad.</p>
-		<p>Como investigador, me emociona la idea de aportar alg&uacute;n beneficio a nuestro planeta y aplicar parte de nuestro potencial a proyectos relacionados con <strong>salud</strong> y <strong>medio ambiente</strong>. </p>		
-	</div><!--END ONE-THIRD--> 	
-		
-	<div class="one-third last">
-		<h3 class="title">Estudios destacados</h3>	
-		<ul class="skills-graph" id="example-1">		
-			<li><p>C.F.G.S. ADMINISTRACIÓN DE SISTEMAS</p><span class="100"></span><br />100%</li>
-			<li><p>INGENIERÍA DE SISTEMAS INFORMÁTICOS</p><span class="100"></span><br />100%</li>
-			<li><p>MÁSTER EEES EN SISTEMAS INTELIGENTES</p><span class="55"></span><br />
-			55%</li>
-		</ul><!--END SKILLS-GRAPH--> 
-	</div><!--END ONE-THIRD--> 	
-		
-		
-	<div class="divider-border"></div>	
-	<div class="clear"></div>		
-	
-	<h3 class="title">Hobbies</h3>
-	
-	<div class="one-third team">
-		<img src="images/member.jpg" alt="" />	
-	  <div class="arrow"></div>					
-		<div class="team-member-info">
-			<ul>
-				<li><h2>Pedro Bosch</h2></li>
-				<li><h3>Ingeniero</h3></li>		
-			</ul>	
-		</div><!--END TEAM-MEMBER-INFO-->
-	</div><!--END ONE-THIRD-->
-	
-	<div class="two-third team last">
-    <div class="arrow"></div>		
-		<div class="team-member-info">
-			<ul>
-				<li>
-				  <h2>En mi tiempo libre</h2></li>
-                  <p>Soy un amante de cualquier actividad deportiva que requiera un contacto con la naturaleza y de los deportes acuáticos, especialmente del Kite-Surf, ideal por el fuerte viento de las costas almerienses.</p>	
-                  <p>Adem&aacute;s de mi tabla y mi cometa, tambi&eacute;n me apasiona la automoci&oacute;n, conducir mi BMW y disfrutar de cada instante en la carretera acompa&ntilde;ado por mi chica y los grandes cl&aacute;sicos del rock de los 80's, sin nada ni nadie que pueda estropear ese maravilloso momento. </p>
-                  <br />	
-                  <li><h2>Objetivos personales</h2></li>
-                  <p>La alegria y la felicidad son los grandes objetivos de la vida. Me propongo alcanzar estas metas siguiendo una vida humilde y sencilla, formando mi propia familia, rodeado de gente buena y querida, y difrutando de los  placeres que pasan desapercibidos cada instante y que son &uacute;nicos. </p>	
-			</ul>	
-		</div><!--END TEAM-MEMBER-INFO-->
-	</div><!--END ONE-THIRD-->
-	
 	<!-- START FOOTER -->
 	
 	<div id="footer">
@@ -153,7 +112,7 @@
 					</div><!--END ONE-FOURTH-->	
 		
 					<div class="one-fifth last">
-						<h3>ÚLTIMOS TWEETS</h3>
+						<h3>ÃšLTIMOS TWEETS</h3>
 						<div class="tweets"></div><!--END TWEETS-->				
 					</div><!--END ONE-FOURTH LAST-->
 					
